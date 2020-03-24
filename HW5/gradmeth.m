@@ -1,9 +1,9 @@
 function [f_all,gnorm_all] = gradmeth(fun, x0, tol, maxit)
-% code for gradient method, including backtracking line search, goes here,
-% instead of the following dummy code, which just takes one gradient step
-% and does not even check whether fun(x) < fun(x0).
-% Note that the input parameter 'fun' is an anonymous function.
+% Gradient method with backtracking line search.
 %
+% Authour: Terrence Alsup
+% Date: March 10, 2020
+% File: gradmeth.m
 
 x = x0;
 [f, g] = fun(x); % Get the starting values.
